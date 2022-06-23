@@ -34,44 +34,44 @@ contenido.
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
 
-#Solo se contempla el caso en que las variables sean > o <, no si son =
+# No se contemplara el caso de que las variables sean =, solo > o <.
 
 palabra_1 = str(input("Ingrese la primer palabra:"))
-palabra_2 = str(input("Ingrese la segundo palabra:"))
+palabra_2 = str(input("Ingrese la segunda palabra:"))
 palabra_3 = str(input("Ingrese la tercer palabra:"))
 orden = int(input("Ingrese 1 para odenarlas alfabeticamente o 2 por cantidad de letras: "))
 
 if orden == 1:
-    if (palabra_1[0].lower > palabra_2[0].lower and palabra_1[0].lower > palabra_3[0].lower):
-      if palabra_2[0].lower > palabra_3[0].lower:
-        print(palabra_1, palabra_2, palabra_3)
-      else:
-        print(palabra_1, palabra_3, palabra_2)
-    elif palabra_2[0].lower > palabra_1[0].lower and palabra_2[0].lower > palabra_3[0].lower:
-      if palabra_1[0].lower > palabra_3[0].lower:
-        print(palabra_2, palabra_1, palabra_3)
-      else:
-        print(palabra_2, palabra_3, palabra_1)
-    elif palabra_3[0].lower > palabra_1[0].lower and palabra_3[0].lower > palabra_2[0].lower:
-      if palabra_1[0].lower > palabra_2[0].lower:
-        print(palabra_3, palabra_1, palabra_2)
-      else:
-        print(palabra_3, palabra_2, palabra_1)
+    if palabra_1[0].lower() < palabra_2[0].lower() and palabra_1[0].lower() < palabra_3[0].lower():
+        if palabra_2[0].lower() < palabra_3[0].lower():
+            print(palabra_1, palabra_2, palabra_3)
+        else:
+            print(palabra_1, palabra_3, palabra_2)
+    elif palabra_2[0].lower() < palabra_1[0].lower() and palabra_2[0].lower() < palabra_3[0].lower():
+        if palabra_1[0].lower() < palabra_3[0].lower():
+            print(palabra_2, palabra_1, palabra_3)
+        else:
+            print(palabra_2, palabra_3, palabra_1)
+    elif palabra_3[0].lower() < palabra_1[0].lower() and palabra_3[0].lower() < palabra_2[0].lower():
+        if palabra_1[0].lower() < palabra_2[0].lower():
+            print(palabra_3, palabra_1, palabra_2)
+        else:
+            print(palabra_3, palabra_2, palabra_1)
         
 if orden == 2:
     if (len(palabra_1) > len(palabra_2) and len(palabra_1) > len(palabra_3)):
-      if len(palabra_2) > len(palabra_3):
-        print(palabra_1, palabra_2, palabra_3)
-      else:
-        print(palabra_1, palabra_3, palabra_2)
+        if len(palabra_2) > len(palabra_3):
+            print(palabra_1, palabra_2, palabra_3)
+        else:
+            print(palabra_1, palabra_3, palabra_2)
     elif len(palabra_2) > len(palabra_1) and len(palabra_2) > len(palabra_3):
-      if len(palabra_1) > len(palabra_3):
-        print(palabra_2, palabra_1, palabra_3)
-      else:
-        print(palabra_2, palabra_3, palabra_1)
+        if len(palabra_1) > len(palabra_3):
+            print(palabra_2, palabra_1, palabra_3)
+        else:
+            print(palabra_2, palabra_3, palabra_1)
     elif len(palabra_3) > len(palabra_1) and len(palabra_3) > len(palabra_2):
-      if len(palabra_1) > len(palabra_2):
-        print(palabra_3, palabra_1, palabra_2)
-      else:
-        print(palabra_3, palabra_2, palabra_1)
+        if len(palabra_1) > len(palabra_2):
+            print(palabra_3, palabra_1, palabra_2)
+        else:
+            print(palabra_3, palabra_2, palabra_1)
         

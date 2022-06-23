@@ -38,4 +38,3 @@ if numero_3 % 2 == 0:
     print("El tercer numero es par")
 else:
     print("El tercer numero es impar")
-    
