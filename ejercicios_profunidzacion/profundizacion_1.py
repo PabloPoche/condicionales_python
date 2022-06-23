@@ -28,6 +28,6 @@ if resta == 0 :
   print("El resultado de la resta es 0")
 elif resta > 0 :
   print("El resultado de la resta es positivo")
-  else:
+else:
   print("El resultado de la resta es negativo")
   
