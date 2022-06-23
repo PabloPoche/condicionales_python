@@ -12,8 +12,8 @@
 # Comparadores
 # Ingrese dos palabras cualesquiera y realice las sigueintes
 # comparaciones entre ellas
-texto_1 = str(input('Ingrese la primera palabra:\n'))
-texto_2 = str(input('Ingrese la segunda palabra:\n'))
+texto_1 = str(input('Ingrese la primera palabra:'))
+texto_2 = str(input('Ingrese la segunda palabra:'))
 
 # Compare cual de las dos palabras es mayor (alfabéticamente)
 # Imprima en pantalla según corresponda
